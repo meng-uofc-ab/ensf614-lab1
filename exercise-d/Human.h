@@ -16,6 +16,7 @@ protected:
     char *name;       // Human's name
 public:
     Human(const char* nam="", double x=0, double y=0);
+    Human(const Human& source);
     ~Human();
     char* get_name() const;
     void set_name(const char* name);

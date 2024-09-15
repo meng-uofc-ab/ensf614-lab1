@@ -16,6 +16,11 @@ Human::Human(const char* nam, double x, double y): name(new char[strlen(nam)+1])
     location.set_y(y);
 }
 
+Human::Human(const Human& source)
+    : name(new char[strlen(source.name) + 1]), location(source.location) {
+    strcpy(this->name, source.name);
+}
+
 Human::~Human() {
     delete[] name;
 }
