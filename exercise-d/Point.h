@@ -13,12 +13,11 @@ using namespace std;
 
 class Point{
 private:
-    double x;
-    double y;
+    double x, y;
 public:
     Point(double a =0, double b =0);
-    double get_x();
-    double get_y();
+    double get_x() const;
+    double get_y() const;
     void set_x(double a);
     void set_y(double a);
 };
