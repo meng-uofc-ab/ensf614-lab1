@@ -17,10 +17,10 @@ protected:
 public:
     Human(const char* nam="", double x=0, double y=0);
     ~Human();
-    char* get_name();
-    void set_name(char* name);
-    Point get_point() const ;
-    void display();
+    char* get_name() const;
+    void set_name(const char* name);
+    Point get_point() const;
+    void display() const;
 };
 
 #endif /* Human_h */

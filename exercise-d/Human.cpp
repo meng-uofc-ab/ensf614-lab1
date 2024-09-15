@@ -20,7 +20,7 @@ Human::~Human() {
     delete[] name;
 }
     
-char* Human::get_name() {
+char* Human::get_name() const {
     return name;
 }
             
@@ -36,7 +36,7 @@ Point Human::get_point() const {
     return location;
 }
     
-void Human::display() {
+void Human::display() const {
     cout << "Human Name: " << name << "\nHuman Location: "
     << location.get_x() << " ,"
     << location.get_y() << ".\n" << endl;
