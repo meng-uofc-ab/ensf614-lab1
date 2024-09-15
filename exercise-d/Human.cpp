@@ -21,6 +21,18 @@ Human::Human(const Human& source)
     strcpy(this->name, source.name);
 }
 
+Human& Human::operator=(const Human& source) {
+    if (this != &source) {
+        delete[] name;
+
+        name = new char[strlen(source.name) + 1];
+        strcpy(name, source.name);
+
+        location = source.location;
+    }
+    return *this;
+}
+
 Human::~Human() {
     delete[] name;
 }
