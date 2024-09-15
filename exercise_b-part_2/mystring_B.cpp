@@ -1,8 +1,11 @@
-/*  mystring_B.cpp
- *
- *
- */
-// Lab 1 - Exercise A
+/*
+* File Name: mystring_B.cpp
+* Assignment: Lab 1 Exercise B Part 2
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
+
 #include "mystring_B.h"
 #include <string.h>
 #include <iostream>

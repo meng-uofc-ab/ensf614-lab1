@@ -1,8 +1,11 @@
-/* File: mystring_B.h
- *
- *
- */
-// Lab 1- Exercise A
+/*
+* File Name: mystring_B.h
+* Assignment: Lab 1 Exercise B Part 2
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;

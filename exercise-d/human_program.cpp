@@ -1,3 +1,11 @@
+/*
+* File Name: human_program.cpp
+* Assignment: Lab 1 Exercise D
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
+
 #include <cstring>
 #include <iostream>
 using namespace std;

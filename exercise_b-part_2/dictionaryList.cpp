@@ -1,8 +1,10 @@
-// lookuptable.cpp
-
-// Lab 1 - Exercise A
- 
-// Completed by:
+/*
+* File Name: dictionaryList.cpp
+* Assignment: Lab 1 Exercise B Part 2
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
 
 #include <assert.h>
 #include <iostream>

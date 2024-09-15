@@ -1,9 +1,11 @@
-//
-//  Point.h
-//  exercise-d
-//
-//  Created by Abhilash Paul on 2024-09-15.
-//
+/*
+* File Name: Point.h
+* Assignment: Lab 1 Exercise D
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
+
 
 #ifndef Point_h
 #define Point_h

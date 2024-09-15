@@ -1,5 +1,10 @@
-// dictionaryList.h
-// Lab 1 - Exercise A
+/*
+* File Name: dictionaryList.h
+* Assignment: Lab 1 Exercise B Part 2
+* Lab section: B01
+* Completed by: Abhilash Paul
+* Development Date: Sept 14, 2024
+*/
 
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
