@@ -23,7 +23,7 @@ int main()
   test_copying();
     
  // Uncomment the call to test_copying when DictionaryList::copy is properly defined
- // test_finding(dl);
+  test_finding(dl);
  // test_operator_overloading(dl);
   
   return 0;
@@ -126,7 +126,7 @@ void test_finding(DictionaryList& dl)
     
      // Pretend that a user is trying to look up names.
      cout << "\nLet's look up some names ...\n";
-    
+     
      dl.find(8001);
      if (dl.cursor_ok())
         cout << "  name for 8001 is: " << dl.cursor_datum().c_str() << ".\n";

@@ -168,26 +168,53 @@ void DictionaryList::make_empty()
 
 void DictionaryList::find(const Key& keyA)
 {
-  cout << "\nDon't know how to find " << keyA << " (or any other key).\n";
-  cout << "... so exit is being called.\n";
-  exit(1);
+  cursorM = 0;
+  // if key is found in the list, update cursor
+  for (Node * ptr = headM; ptr !=0; ptr = ptr->nextM){
+      if(keyA == ptr->keyM){
+          cursorM = ptr;
+          return;
+      }
+  }
 }
 
 
 void DictionaryList::destroy()
 {
-  cout << "\nWARNING: DictionaryList::destroy() is abandoning nodes\n"
-       << "when it should be deleting them!\n";
-  headM = 0;
+    Node* current = headM;
+    while (current != 0) {
+        Node* next = current -> nextM;
+        delete current;
+        current = next;
+    }
 }
 
 
 void DictionaryList::copy(const DictionaryList& source)
 {
-  
-  cout << "\nDictionaryList::copy is not implemented properly,\n"
-       << "so the program is calling exit.\n";
-  exit(1);
+  if (source.headM == 0){
+      sizeM = 0;
+      headM = 0;
+      cursorM = 0;
+  } else{
+      headM = new Node(source.headM ->keyM, source.headM ->datumM, 0);
+      cursorM = 0;
+      sizeM = 1;
+      
+      Node* current = headM;
+      Node* next = source.headM -> nextM;
+      
+      while (next != 0) {
+          sizeM++;
+          current->nextM = new Node(next->keyM, next->datumM, 0);
+          // If the source list's cursor is at this node, update the cursor
+          if(next == source.cursorM){
+              cursorM = current -> nextM;
+          }
+          current = current->nextM;
+          next = next->nextM;
+      }
+  }
 }
 
 
