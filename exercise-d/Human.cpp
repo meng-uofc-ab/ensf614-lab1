@@ -15,6 +15,10 @@ Human::Human(const char* nam, double x, double y): name(new char[strlen(nam)+1])
     location.set_x(x);
     location.set_y(y);
 }
+
+Human::~Human() {
+    delete[] name;
+}
     
 char* Human::get_name() {
     return name;
