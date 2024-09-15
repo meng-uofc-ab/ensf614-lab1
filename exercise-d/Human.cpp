@@ -24,12 +24,15 @@ char* Human::get_name() {
     return name;
 }
             
-void Human::set_name(char* name) {
-    this->name = new char[strlen(name)+1];
-    strcpy(this ->name, name);
+void Human::set_name(const char* name) {
+    if (this->name != name) {
+        delete[] this->name;
+        this->name = new char[strlen(name)+1];
+        strcpy(this ->name, name);
+    }
 }
    
-Point Human::get_point()const {
+Point Human::get_point() const {
     return location;
 }
     
