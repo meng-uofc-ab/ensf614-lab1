@@ -16,14 +16,18 @@ Human::Human(const char* nam, double x, double y): name(new char[strlen(nam)+1])
     location.set_y(y);
 }
     
-char* Human::get_name() {return name;}
+char* Human::get_name() {
+    return name;
+}
             
 void Human::set_name(char* name) {
     this->name = new char[strlen(name)+1];
     strcpy(this ->name, name);
 }
    
-Point Human::get_point()const {return location;}
+Point Human::get_point()const {
+    return location;
+}
     
 void Human::display() {
     cout << "Human Name: " << name << "\nHuman Location: "
