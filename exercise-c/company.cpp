@@ -3,7 +3,7 @@
 * Assignment: Lab 1 Exercise C
 * Lab section: B01
 * Completed by: Abhilash Paul
-* Development Date: Sept 14, 2024
+* Submission Date: Sept 17, 2024
 */
 
 #include <string>
@@ -17,7 +17,7 @@ private:
     string street;
     string city;
     string state;
-    string zipCode;
+    string postalCode;
     string country;
 };
 
